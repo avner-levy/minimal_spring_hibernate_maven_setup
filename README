@@ -1,0 +1,6 @@
+Once a while I find myself with a need to test some hibernate feature in a standalone setup.
+This project serves as a starting point to a standalone spring / jpa application.
+It uses build time aspectJ weaving (for spring aspects / transaction management).
+It uses a temporary embedded database but you can switch to what ever you want.
+Enjoy,
+  Avner
