@@ -2,5 +2,7 @@ Once a while I find myself with a need to test some hibernate feature in a stand
 This project serves as a starting point to a standalone spring / jpa application.
 It uses build time aspectJ weaving (for spring aspects / transaction management).
 It uses a temporary embedded database but you can switch to what ever you want.
+Run "mvn install" to compile the project with the tests.
+Run "mvn exec:java" to run the main application.
 Enjoy,
   Avner
