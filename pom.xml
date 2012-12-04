@@ -55,8 +55,8 @@
         </dependency>
 
         <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-aspects</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
             <version>${spring.framework.version}</version>
         </dependency>
 
@@ -108,6 +108,21 @@
                         <version>${aspectj.version}</version>
                     </dependency>
                 </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>jpa.spring_hibernate.PersonCRUDMain</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
